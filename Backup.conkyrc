@@ -1,0 +1,133 @@
+# UBUNTU-CONKY
+# A comprehensive conky script, configured for use on
+# Ubuntu / Debian Gnome, without the need for any external scripts.
+#
+# Based on conky-jc and the default .conkyrc.
+# INCLUDES:
+# - tail of /var/log/messages 
+# - netstat connections to your computer
+#
+# -- Pengo (conky@pengo.us)
+#
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_hints undecorated,below,skip_taskbar
+background no
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# fiddle with window
+use_spacer yes
+use_xft yes
+
+# Update interval in seconds
+update_interval 3.0
+
+# Minimum size of text area
+minimum_size 300 11
+
+# Maximum width
+maximum_width 300
+
+
+# Draw shades?
+draw_shades yes
+
+# Text stuff
+draw_outline no # amplifies text if yes
+draw_borders no
+
+uppercase no # set to yes if you want all text to be in uppercase
+
+# Stippled borders?
+stippled_borders 8
+
+# border margins
+border_margin 4
+
+# border width
+border_width 1
+
+
+
+# Default colors and also border colors, grey90 == #e5e5e5
+default_color white
+default_shade_color black
+default_outline_color white
+
+# If own_window is yes, you may use type normal, desktop or override
+own_window_type normal
+
+own_window_colour black
+own_window_transparent yes
+own_window_argb_visual true
+own_window_argb_value 0
+
+# Text alignment, other possible values are commented
+#alignment top_left
+alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+gap_x 10
+gap_y 10
+
+# stuff after 'TEXT' will be formatted on screen
+
+override_utf8_locale no
+xftfont Terminus:size=9
+xftalpha 0.8
+
+TEXT
+
+${offset 110}${color }Linux Ubuntu ${color slate grey}Jammy Jellyfish
+${offset 110}${color slate grey}22.04 LTS ${color }Long Term Support${color slate grey}
+${offset 110}${color slate grey}Michael Quisido III aka |Mike|
+${offset 110}${color }HP EliteBook ${color slate grey}745 G2
+
+${offset 110}${color slate grey}${color }${time %x}
+${offset 110}${color slate grey}${time %Z,} ${color }${time %z %H:%M:%S}
+${offset 110}${color slate grey}UpTime: ${color }$uptime
+${offset 110}${color slate grey}Kernel: ${color }$kernel
+${offset 110}${color slate grey}CPU:${color } ${freq_g}GHz  (${cpu}%) ${acpitemp}C
+${offset 110}${cpugraph 20,175 000000 ffffff}
+${offset 110}${color slate grey}Load: ${color }$loadavg
+${offset 110}${color slate grey}Processes: ${color }$processes  
+${offset 110}${color slate grey}Running:   ${color }$running_processes
+${offset 110}${color slate grey}GPU:       ${color }${execi 5 radeontop -d- -l1 | grep -o 'gpu [0-9]\{1,3\}' | cut -c 5-7 }% 
+
+${offset 110}${color slate grey}Highest CPU Usage:
+${offset 110}${color #ddaa00} ${top name 1}${top_mem cpu 1}
+${offset 110}${color lightgrey} ${top name 2}${top cpu 2}
+${offset 110}${color #9e0000} ${top name 3}${top cpu 3}
+${offset 110}${color lightgrey} ${top name 4}${top cpu 4}
+
+${offset 110}${color slate grey}Highest RAM Usage:
+${offset 110}${color #ddaa00} ${top_mem name 1}${top_mem mem 1}
+${offset 110}${color lightgrey} ${top_mem name 2}${top_mem mem 2}
+${offset 110}${color #9e0000} ${top_mem name 3}${top_mem mem 3}
+${offset 110}${color lightgrey} ${top_mem name 4}${top_mem mem 4}
+
+${offset 110}${color slate grey}RAM:  ${color } $memperc% $mem/$memmax
+${offset 110}${membar 3,175}
+${offset 110}${color slate grey}SWAP: ${color }$swapperc% $swap/$swapmax
+${offset 110}${swapbar 3,175}
+${offset 110}${color slate grey}ROOT:    ${color }${fs_free /}/${fs_size /}
+${offset 110}${fs_bar 3,175 /}
+${offset 110}${color slate grey}HOME:  ${color }${fs_free /home}/${fs_size /home}
+${offset 110}${fs_bar 3,175 /home}
+${offset 110}${color slate grey}USB Media:  ${color }${fs_free /dev/sdb1}/${fs_size /dev/sdb1}
+${offset 110}${fs_bar 3,175 /dev/sdb1}
+
+${offset 110}${color slate grey}Wireless Net Connection: 
+${offset 110}${color}Up: ${color }${upspeed wlo1} k/s
+${offset 110}${upspeedgraph wlo1 20,175 000000 ffffff}
+${offset 110}${color}Down: ${color }${downspeed wlo1}k/s${color}
+${offset 110}${downspeedgraph wlo1 20,175 000000 ffffff}
+${offset 110}${color slate grey}Wired Net Connection:
+${offset 110}${color}Up: ${color }${upspeed enp1s0f0} k/s
+${offset 110}${upspeedgraph enp1s0f0 20,175 000000 ffffff}
+${offset 110}${color}Down: ${color }${downspeed enp1s0f0}k/s${color}
+${offset 110}${downspeedgraph enp1s0f0 20,175 000000 ffffff}
