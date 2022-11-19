@@ -8,7 +8,7 @@
 # - netstat connections to your computer
 #
 # -- Pengo (conky@pengo.us)
-#
+# -- Mike  (mike082112@gmail.com)
 # Create own window instead of using desktop (required in nautilus)
 own_window yes
 own_window_hints undecorated,below,skip_taskbar
@@ -91,8 +91,13 @@ ${offset 110}${color slate grey}${color }${time %x}
 ${offset 110}${color slate grey}${time %Z,} ${color }${time %z %H:%M:%S}
 ${offset 110}${color slate grey}UpTime: ${color }$uptime
 ${offset 110}${color slate grey}Kernel: ${color }$kernel
-${offset 110}${color slate grey}CPU:${color } ${freq_g}GHz  (${cpu}%) ${acpitemp}C
-${offset 110}${cpugraph 20,175 000000 ffffff}
+${offset 110}${color slate grey}CPU:${color } ${freq_g}GHz ${acpitemp}C
+${offset 110}${color }${cpugraph 20,189 000000 ffffff}
+${offset 110}${color slate grey}Cores: 
+${offset 110}${color }Core-1: (${cpu cpu0}%) ${cpubar cpu0 3}
+${offset 110}${color }Core-2: (${cpu cpu1}%) ${cpubar cpu1 3}
+${offset 110}${color }Core-3: (${cpu cpu2}%) ${cpubar cpu2 3}
+${offset 110}${color }Core-4: (${cpu cpu3}%) ${cpubar cpu3 3}
 ${offset 110}${color slate grey}Load: ${color }$loadavg
 ${offset 110}${color slate grey}Processes: ${color }$processes  
 ${offset 110}${color slate grey}Running:   ${color }$running_processes
@@ -111,23 +116,23 @@ ${offset 110}${color #9e0000} ${top_mem name 3}${top_mem mem 3}
 ${offset 110}${color lightgrey} ${top_mem name 4}${top_mem mem 4}
 
 ${offset 110}${color slate grey}RAM:  ${color } $memperc% $mem/$memmax
-${offset 110}${membar 3,175}
+${offset 110}${membar 3,189}
 ${offset 110}${color slate grey}SWAP: ${color }$swapperc% $swap/$swapmax
-${offset 110}${swapbar 3,175}
+${offset 110}${swapbar 3,189}
 ${offset 110}${color slate grey}ROOT:    ${color }${fs_free /}/${fs_size /}
-${offset 110}${fs_bar 3,175 /}
+${offset 110}${fs_bar 3,189 /}
 ${offset 110}${color slate grey}HOME:  ${color }${fs_free /home}/${fs_size /home}
-${offset 110}${fs_bar 3,175 /home}
+${offset 110}${fs_bar 3,189 /home}
 ${offset 110}${color slate grey}USB Media:  ${color }${fs_free /dev/sdb1}/${fs_size /dev/sdb1}
-${offset 110}${fs_bar 3,175 /dev/sdb1}
+${offset 110}${fs_bar 3,189 /dev/sdb1}
 
 ${offset 110}${color slate grey}Wireless Net Connection: 
 ${offset 110}${color}Up: ${color }${upspeed wlo1} k/s
-${offset 110}${upspeedgraph wlo1 20,175 000000 ffffff}
+${offset 110}${upspeedgraph wlo1 20,189 000000 ffffff}
 ${offset 110}${color}Down: ${color }${downspeed wlo1}k/s${color}
-${offset 110}${downspeedgraph wlo1 20,175 000000 ffffff}
+${offset 110}${downspeedgraph wlo1 20,189 000000 ffffff}
 ${offset 110}${color slate grey}Wired Net Connection:
 ${offset 110}${color}Up: ${color }${upspeed enp1s0f0} k/s
-${offset 110}${upspeedgraph enp1s0f0 20,175 000000 ffffff}
+${offset 110}${upspeedgraph enp1s0f0 20,189 000000 ffffff}
 ${offset 110}${color}Down: ${color }${downspeed enp1s0f0}k/s${color}
-${offset 110}${downspeedgraph enp1s0f0 20,175 000000 ffffff}
+${offset 110}${downspeedgraph enp1s0f0 20,189 000000 ffffff}
