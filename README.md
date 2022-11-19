@@ -12,7 +12,7 @@ INCLUDES:
 - tail of /var/log/messages 
 - Personalize Name / Operating System Name 
 - netstat connections to your computer LAN and Wireless (WIFI)
-- CPU 4 cores Monitoring / CPU Single Graph / Processing Apps / Application Usage / RAM Usage
+- CPU 4 cores Monitoring with graph / CPU Single Graph / Processing Apps / Application Usage / RAM Usage
 - GPU
 
 -- Pengo (conky@pengo.us)
