@@ -10,7 +10,10 @@ Ubuntu / Debian Gnome, without the need for any external scripts.
 Based on conky-jc and the default .conkyrc.
 INCLUDES:
 - tail of /var/log/messages 
-- netstat connections to your computer
+- Personalize Name / Operating System Name 
+- netstat connections to your computer LAN and Wireless (WIFI)
+- CPU 4 cores Monitoring / CPU Single Graph / Processing Apps / Application Usage / RAM Usage
+- GPU
 
 -- Pengo (conky@pengo.us)
 -- Michael Quisido (mike082112@gmail.com)
