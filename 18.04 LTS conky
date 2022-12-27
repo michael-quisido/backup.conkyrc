@@ -85,8 +85,8 @@ TEXT
 
 ${color slate grey}INFO:${color }${scroll 50 Conky $conky_version - $sysname $nodename $kernel $machine}
 $hr
-${offset 1}${color }Linux Ubuntu ${color slate grey}Jammy Jellyfish
-${offset 1}${color slate grey}22.04 LTS ${color }Long Term Support${color slate grey}
+${offset 1}${color }Linux Ubuntu ${color slate grey}Bionic Beaver 18.04 ${color }LTS
+${offset 1}${color slate grey}${color }L${color slate grey}ong ${color }T${color slate grey}erm ${color }S${color slate grey}upport
 ${offset 1}${color slate grey}Michael Quisido III aka |Mike|
 ${offset 1}${color }HP EliteBook ${color slate grey}745 G2
 ${color }$hr
