@@ -82,7 +82,7 @@ xftfont Terminus:size=8
 xftalpha 0.8
 
 TEXT
-
+${image /home/desktop-user-name/Pictures/VirtualBox/GNU-Logo-500x313.png -p 110,80 -s 144x90 -f 8600}
 ${offset 110}${color }Linux Ubuntu ${color slate grey}Jammy Jellyfish
 ${offset 110}${color slate grey}22.04 LTS ${color }Long Term Support${color slate grey}
 ${offset 110}${color slate grey}Michael Quisido III aka |Mike|
