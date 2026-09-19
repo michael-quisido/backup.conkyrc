@@ -82,7 +82,7 @@ xftfont Terminus:size=8.5
 xftalpha 0.8
 
 TEXT
-${image /home/mike_q/Pictures/VirtualBox/GNU-Logo-500x313.png -p 110,80 -s 144x90 -f 8600}
+${image /home/desktop-user-name/Pictures/VirtualBox/GNU-Logo-500x313.png -p 110,80 -s 144x90 -f 8600}
 ${color slate grey}INFO:${color }${scroll 50 Conky $conky_version - $sysname $nodename $kernel $machine}
 $hr
 ${offset 1}${color }Linux Ubuntu ${color slate grey}Bionic Beaver 18.04 ${color }LTS
