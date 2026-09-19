@@ -15,7 +15,7 @@ INCLUDES:
 - CPU 4 cores Monitoring with graph / CPU Single Graph / Processing Apps / Application Usage / RAM Usage
 - GPU
 
--- Pengo (conky@pengo.us)
+-- Pengo (conky@pengo.us) <br>
 -- Michael Quisido (mike082112@gmail.com and mike.quisido@kmcq-gmbh.com)
 
 Create own window instead of using desktop (required in nautilus)
