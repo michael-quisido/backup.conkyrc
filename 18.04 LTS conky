@@ -12,7 +12,7 @@
 
 #
 # -- Pengo (conky@pengo.us)
-# -- Mike  (mike082112@gmail.com and  mike.quisido@kmcq-gmbh.com)
+# -- Mike  (mike082112@gmail.com and mike.quisido@kmcq-gmbh.com)
 # Create own window instead of using desktop (required in nautilus)
 own_window yes
 own_window_hints undecorated,below,skip_taskbar
