@@ -88,7 +88,6 @@ TEXT
 ${image /home/desktop-user-name/Pictures/VirtualBox/GNU-Logo-500x313.png -p 110,80 -s 144x90 -f 8600}
 ${image ~/Pictures/Wallpapers/linux-penguin.png -p 120,180 -s 70x84 -f 86400}
 ${image ~/Pictures/Wallpapers/amd-ryzen_7.png -p 120,470 -s 80x60 -f 86400}
-${image ~/Pictures/Wallpapers/RAM.png -p 120,550 -s 90x56 -f 86400}
 ${color slate grey}INFO:${color }${scroll 50 Conky $conky_version - $sysname $nodename $kernel $machine}
 $hr
 ${offset 1}${color }Linux Ubuntu ${color slate grey}Jammy Jellyfish${color } LTS
