@@ -85,6 +85,7 @@ xftfont Terminus:size=8.5
 xftalpha 0.8
 
 TEXT
+${image /home/desktop-user-name/Pictures/VirtualBox/GNU-Logo-500x313.png -p 110,80 -s 144x90 -f 8600}
 ${image ~/Pictures/Wallpapers/linux-penguin.png -p 120,180 -s 70x84 -f 86400}
 ${image ~/Pictures/Wallpapers/amd-ryzen_7.png -p 120,470 -s 80x60 -f 86400}
 ${image ~/Pictures/Wallpapers/RAM.png -p 120,550 -s 90x56 -f 86400}
