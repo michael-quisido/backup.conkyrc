@@ -16,7 +16,7 @@ INCLUDES:
 - GPU
 
 -- Pengo (conky@pengo.us) <br>
--- Michael Quisido (mike082112@gmail.com and mike.quisido@kmcq-gmbh.com)
+-- Michael Quisido (mike082112@gmail.com or mike.quisido@kmcq-gmbh.com)
 
 Create own window instead of using desktop (required in nautilus)
 backup.conkyrc
