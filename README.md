@@ -3,7 +3,7 @@
 This is back up conky code from my Ubuntu desktop
 I have used this since I started Ubuntu 18.04 lts until now Ubuntu 22.04.
 
-UBUNTU-CONKY
+# UBUNTU-CONKY
 A comprehensive conky script, configured for use on
 Ubuntu / Debian Gnome, without the need for any external scripts.
 
